@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>patient_details</field>
+        <mandatory>true</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:33:17</sys_created_on>
+        <sys_id>35041104473c1210fbca7f52d16d43bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>patient_details</sys_name>
+        <sys_package display_value="KGMU Hospital" source="x_707573_kgmu_hosp">0152940847301210fbca7f52d16d4304</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="KGMU Hospital">0152940847301210fbca7f52d16d4304</sys_scope>
+        <sys_update_name>sys_ui_policy_action_35041104473c1210fbca7f52d16d43bf</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:33:17</sys_updated_on>
+        <table>x_707573_kgmu_hosp_patient_record</table>
+        <ui_policy display_value="Make Readonly">07a315c0473c1210fbca7f52d16d431f</ui_policy>
+        <visible>true</visible>
+    </sys_ui_policy_action>
+</record_update>

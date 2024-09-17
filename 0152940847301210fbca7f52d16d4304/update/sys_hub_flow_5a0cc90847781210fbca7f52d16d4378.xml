@@ -1,0 +1,1446 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=edge,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=505000,viewActivatedIn=naturalLanguage</attributes>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>hospital flow</description>
+        <internal_name>hospital_flow</internal_name>
+        <label_cache>[{"name":"9b7f2a67-9f14-4f33-b802-1c065b93b7e3.approval_state","label":"1 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"{{static.62826bf03710200044e0bfc8bcbe5df1}}","label":"Abel Tuter","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference"},{"name":"Created_1.current","label":"Trigger - Record Created➛Patient Record Record","reference":"x_707573_kgmu_hosp_patient_record","reference_display":"Patient Record","type":"reference","base_type":"reference","attributes":{}}]</label_cache>
+        <master_snapshot>b9fd858447f81210fbca7f52d16d43a6</master_snapshot>
+        <name>Hospital Flow</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>96fdc58447f81210fbca7f52d16d433c</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 12:58:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5a0cc90847781210fbca7f52d16d4378</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Hospital Flow</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="KGMU Hospital" source="x_707573_kgmu_hosp">0152940847301210fbca7f52d16d4304</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="KGMU Hospital">0152940847301210fbca7f52d16d4304</sys_scope>
+        <sys_update_name>sys_hub_flow_5a0cc90847781210fbca7f52d16d4378</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:06:36</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=5a0cc90847781210fbca7f52d16d4378"/>
+    <sys_variable_value action="delete_multiple" query="document_key=5a0cc90847781210fbca7f52d16d4378"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_707573_kgmu_hosp_patient_record">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>96fdc58447f81210fbca7f52d16d433c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="KGMU Hospital">0152940847301210fbca7f52d16d4304</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:06:36</sys_updated_on>
+        <table>x_707573_kgmu_hosp_patient_record</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>5a0cc90847781210fbca7f52d16d4378</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:36</sys_created_on>
+        <sys_id>d2fdc58447f81210fbca7f52d16d433d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:06:36</sys_updated_on>
+        <trigger display_value="">96fdc58447f81210fbca7f52d16d433c</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=5a0cc90847781210fbca7f52d16d4378^sys_idNOT INd2fdc58447f81210fbca7f52d16d433d"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=5a0cc90847781210fbca7f52d16d4378^sys_idNOT IN9bedc18447f81210fbca7f52d16d4369"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Hospital Flow">5a0cc90847781210fbca7f52d16d4378</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:23</sys_created_on>
+        <sys_id>9bedc18447f81210fbca7f52d16d4369</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:06:36</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=9bedc18447f81210fbca7f52d16d4369"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>9bedc18447f81210fbca7f52d16d4369</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:23</sys_created_on>
+        <sys_id>17edc18447f81210fbca7f52d16d436b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:06:23</sys_updated_on>
+        <value>x_707573_kgmu_hosp_patient_record</value>
+        <variable display_value="Table">cfca92e0c31322002841b63b12d3ae00</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>9bedc18447f81210fbca7f52d16d4369</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:23</sys_created_on>
+        <sys_id>dbedc18447f81210fbca7f52d16d436a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:06:23</sys_updated_on>
+        <value>^EQ</value>
+        <variable display_value="Condition">66aadea0c31322002841b63b12d3aebf</variable>
+    </sys_variable_value>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=5a0cc90847781210fbca7f52d16d4378"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=5a0cc90847781210fbca7f52d16d4378^sys_idNOT INda0ccd4047f81210fbca7f52d16d435c"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>5a0cc90847781210fbca7f52d16d4378</id>
+        <name>Hospital Flow</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 12:58:07</sys_created_on>
+        <sys_id>da0ccd4047f81210fbca7f52d16d435c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 12:58:07</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=da0ccd4047f81210fbca7f52d16d435c"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=5a0cc90847781210fbca7f52d16d4378^sys_idNOT IN93edc18447f81210fbca7f52d16d4365,9bedc18447f81210fbca7f52d16d435d"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Hospital Flow">5a0cc90847781210fbca7f52d16d4378</model>
+        <model_id>5a0cc90847781210fbca7f52d16d4378</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_5a0cc90847781210fbca7f52d16d4378</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:23</sys_created_on>
+        <sys_id>93edc18447f81210fbca7f52d16d4365</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="KGMU Hospital">0152940847301210fbca7f52d16d4304</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:06:36</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=93edc18447f81210fbca7f52d16d4365"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Hospital Flow">5a0cc90847781210fbca7f52d16d4378</model>
+        <model_id>5a0cc90847781210fbca7f52d16d4378</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_5a0cc90847781210fbca7f52d16d4378</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:23</sys_created_on>
+        <sys_id>9bedc18447f81210fbca7f52d16d435d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="KGMU Hospital">0152940847301210fbca7f52d16d4304</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:06:36</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=9bedc18447f81210fbca7f52d16d435d"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=5a0cc90847781210fbca7f52d16d4378"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=5a0cc90847781210fbca7f52d16d4378"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=5a0cc90847781210fbca7f52d16d4378^sys_idNOT IN9bedc18447f81210fbca7f52d16d4371,d3edc18447f81210fbca7f52d16d438b,ebedc18447f81210fbca7f52d16d43a0"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Hospital Flow">5a0cc90847781210fbca7f52d16d4378</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:23</sys_created_on>
+        <sys_id>9bedc18447f81210fbca7f52d16d4371</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="KGMU Hospital">0152940847301210fbca7f52d16d4304</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:08:49</sys_updated_on>
+        <ui_id>9b7f2a67-9f14-4f33-b802-1c065b93b7e3</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=9bedc18447f81210fbca7f52d16d4371"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>9bedc18447f81210fbca7f52d16d4371</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:23</sys_created_on>
+        <sys_id>97edc18447f81210fbca7f52d16d4375</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:06:23</sys_updated_on>
+        <value>x_707573_kgmu_hosp_patient_record</value>
+        <variable display_value="Table">bcf2e9920b10030085c083eb37673acc</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>9bedc18447f81210fbca7f52d16d4371</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:23</sys_created_on>
+        <sys_id>d3edc18447f81210fbca7f52d16d4375</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:06:23</sys_updated_on>
+        <value/>
+        <variable display_value="Due Date">c5f2e9920b10030085c083eb37673af9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=9bedc18447f81210fbca7f52d16d4371"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_conditions</field>
+        <id>9bedc18447f81210fbca7f52d16d4371</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:23</sys_created_on>
+        <sys_id>9fedc18447f81210fbca7f52d16d4374</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:06:23</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>ApprovesAnyU[{{static.62826bf03710200044e0bfc8bcbe5df1}}]</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>due_date</field>
+        <id>9bedc18447f81210fbca7f52d16d4371</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:23</sys_created_on>
+        <sys_id>dbedc18447f81210fbca7f52d16d4374</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:06:23</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{"action":"none","date_type":"actual","date":"{{}}","duration":1,"duration_type":"days","schedule":"","schedule_label":""}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>9bedc18447f81210fbca7f52d16d4371</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:23</sys_created_on>
+        <sys_id>d3edc18447f81210fbca7f52d16d4374</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:06:23</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>9bedc18447f81210fbca7f52d16d4371</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:23</sys_created_on>
+        <sys_id>53edc18447f81210fbca7f52d16d4375</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:06:23</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=9bedc18447f81210fbca7f52d16d4371"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=9bedc18447f81210fbca7f52d16d4371"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Hospital Flow">5a0cc90847781210fbca7f52d16d4378</flow>
+        <order>3</order>
+        <parent_ui_id>7cc2b8d0-d0ae-4ec2-b3f3-dd4815dfd0d4</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:24</sys_created_on>
+        <sys_id>d3edc18447f81210fbca7f52d16d438b</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="KGMU Hospital">0152940847301210fbca7f52d16d4304</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:08:49</sys_updated_on>
+        <ui_id>c5057dc4-5be4-481d-b100-e0ed7a0abca3</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=d3edc18447f81210fbca7f52d16d438b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d3edc18447f81210fbca7f52d16d438b</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:24</sys_created_on>
+        <sys_id>67edc18447f81210fbca7f52d16d438d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:06:24</sys_updated_on>
+        <value>x_707573_kgmu_hosp_patient_record</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d3edc18447f81210fbca7f52d16d438b</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:24</sys_created_on>
+        <sys_id>a3edc18447f81210fbca7f52d16d438d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:06:24</sys_updated_on>
+        <value>state=2</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=d3edc18447f81210fbca7f52d16d438b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>d3edc18447f81210fbca7f52d16d438b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:24</sys_created_on>
+        <sys_id>23edc18447f81210fbca7f52d16d438d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:06:24</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>d3edc18447f81210fbca7f52d16d438b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:24</sys_created_on>
+        <sys_id>9bedc18447f81210fbca7f52d16d438c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:06:24</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>d3edc18447f81210fbca7f52d16d438b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:24</sys_created_on>
+        <sys_id>6fedc18447f81210fbca7f52d16d438c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:06:24</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d3edc18447f81210fbca7f52d16d438b"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d3edc18447f81210fbca7f52d16d438b"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Hospital Flow">5a0cc90847781210fbca7f52d16d4378</flow>
+        <order>5</order>
+        <parent_ui_id>326cd01e-c0b0-49ed-b790-b53e569597d5</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:24</sys_created_on>
+        <sys_id>ebedc18447f81210fbca7f52d16d43a0</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="KGMU Hospital">0152940847301210fbca7f52d16d4304</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:08:49</sys_updated_on>
+        <ui_id>e142e4cd-5534-4f1a-8a28-6a77c871a4f0</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ebedc18447f81210fbca7f52d16d43a0"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ebedc18447f81210fbca7f52d16d43a0</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:24</sys_created_on>
+        <sys_id>27edc18447f81210fbca7f52d16d43a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:06:24</sys_updated_on>
+        <value>state=3</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ebedc18447f81210fbca7f52d16d43a0</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:24</sys_created_on>
+        <sys_id>e7edc18447f81210fbca7f52d16d43a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:06:24</sys_updated_on>
+        <value>x_707573_kgmu_hosp_patient_record</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=ebedc18447f81210fbca7f52d16d43a0"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>ebedc18447f81210fbca7f52d16d43a0</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:24</sys_created_on>
+        <sys_id>a3edc18447f81210fbca7f52d16d43a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:06:24</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>ebedc18447f81210fbca7f52d16d43a0</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:24</sys_created_on>
+        <sys_id>2fedc18447f81210fbca7f52d16d43a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:06:24</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>ebedc18447f81210fbca7f52d16d43a0</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:24</sys_created_on>
+        <sys_id>efedc18447f81210fbca7f52d16d43a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:06:24</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ebedc18447f81210fbca7f52d16d43a0"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ebedc18447f81210fbca7f52d16d43a0"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=5a0cc90847781210fbca7f52d16d4378"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=5a0cc90847781210fbca7f52d16d4378^sys_idNOT IN5bedc18447f81210fbca7f52d16d4376,a3edc18447f81210fbca7f52d16d438e"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">1fedc18447f81210fbca7f52d16d4375</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Hospital Flow">5a0cc90847781210fbca7f52d16d4378</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:23</sys_created_on>
+        <sys_id>5bedc18447f81210fbca7f52d16d4376</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="KGMU Hospital">0152940847301210fbca7f52d16d4304</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:06:36</sys_updated_on>
+        <ui_id>7cc2b8d0-d0ae-4ec2-b3f3-dd4815dfd0d4</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=5bedc18447f81210fbca7f52d16d4376"/>
+    <sys_element_mapping action="delete_multiple" query="id=5bedc18447f81210fbca7f52d16d4376"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>5bedc18447f81210fbca7f52d16d4376</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:24</sys_created_on>
+        <sys_id>9fedc18447f81210fbca7f52d16d4386</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:06:24</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{9b7f2a67-9f14-4f33-b802-1c065b93b7e3.approval_state}}=approved</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=5bedc18447f81210fbca7f52d16d4376"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5bedc18447f81210fbca7f52d16d4376"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">ebedc18447f81210fbca7f52d16d438d</block>
+        <comment/>
+        <connected_to>7cc2b8d0-d0ae-4ec2-b3f3-dd4815dfd0d4</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Hospital Flow">5a0cc90847781210fbca7f52d16d4378</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:24</sys_created_on>
+        <sys_id>a3edc18447f81210fbca7f52d16d438e</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="KGMU Hospital">0152940847301210fbca7f52d16d4304</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:06:36</sys_updated_on>
+        <ui_id>326cd01e-c0b0-49ed-b790-b53e569597d5</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=a3edc18447f81210fbca7f52d16d438e"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=a3edc18447f81210fbca7f52d16d438e"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a3edc18447f81210fbca7f52d16d438e"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=5a0cc90847781210fbca7f52d16d4378"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=5a0cc90847781210fbca7f52d16d4378"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_5a0cc90847781210fbca7f52d16d4378^sys_idNOT IN57edc18447f81210fbca7f52d16d4367,5fedc18447f81210fbca7f52d16d4363"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_5a0cc90847781210fbca7f52d16d4378</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:23</sys_created_on>
+        <sys_id>57edc18447f81210fbca7f52d16d4367</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="KGMU Hospital" source="x_707573_kgmu_hosp">0152940847301210fbca7f52d16d4304</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="KGMU Hospital">0152940847301210fbca7f52d16d4304</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:06:23</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_5a0cc90847781210fbca7f52d16d4378</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:23</sys_created_on>
+        <sys_id>5fedc18447f81210fbca7f52d16d4363</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="KGMU Hospital" source="x_707573_kgmu_hosp">0152940847301210fbca7f52d16d4304</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="KGMU Hospital">0152940847301210fbca7f52d16d4304</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:06:23</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_5a0cc90847781210fbca7f52d16d4378"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_5a0cc90847781210fbca7f52d16d4378"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_5a0cc90847781210fbca7f52d16d4378"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=edge,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>hospital flow</description>
+        <internal_name>hospital_flow</internal_name>
+        <label_cache>[{"name":"9b7f2a67-9f14-4f33-b802-1c065b93b7e3.approval_state","label":"1 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"{{static.62826bf03710200044e0bfc8bcbe5df1}}","label":"Abel Tuter","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference"},{"name":"Created_1.current","label":"Trigger - Record Created➛Patient Record Record","reference":"x_707573_kgmu_hosp_patient_record","reference_display":"Patient Record","type":"reference","base_type":"reference","attributes":{}}]</label_cache>
+        <master>true</master>
+        <name>Hospital Flow</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Hospital Flow">5a0cc90847781210fbca7f52d16d4378</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:33</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b9fd858447f81210fbca7f52d16d43a6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="KGMU Hospital">0152940847301210fbca7f52d16d4304</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:06:33</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=b9fd858447f81210fbca7f52d16d43a6"/>
+    <sys_variable_value action="delete_multiple" query="document_key=b9fd858447f81210fbca7f52d16d43a6"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=b9fd858447f81210fbca7f52d16d43a6^sys_idNOT IN8afdc58447f81210fbca7f52d16d4312"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Hospital Flow">b9fd858447f81210fbca7f52d16d43a6</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:34</sys_created_on>
+        <sys_id>8afdc58447f81210fbca7f52d16d4312</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:06:36</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=8afdc58447f81210fbca7f52d16d4312"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>8afdc58447f81210fbca7f52d16d4312</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:34</sys_created_on>
+        <sys_id>82fdc58447f81210fbca7f52d16d4314</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:06:34</sys_updated_on>
+        <value>x_707573_kgmu_hosp_patient_record</value>
+        <variable display_value="Table">cfca92e0c31322002841b63b12d3ae00</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>8afdc58447f81210fbca7f52d16d4312</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:34</sys_created_on>
+        <sys_id>cefdc58447f81210fbca7f52d16d4313</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:06:34</sys_updated_on>
+        <value>^EQ</value>
+        <variable display_value="Condition">66aadea0c31322002841b63b12d3aebf</variable>
+    </sys_variable_value>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=b9fd858447f81210fbca7f52d16d43a6"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=b9fd858447f81210fbca7f52d16d43a6^sys_idNOT INbdfd858447f81210fbca7f52d16d43a7"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>b9fd858447f81210fbca7f52d16d43a6</id>
+        <name>Hospital Flow</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:33</sys_created_on>
+        <sys_id>bdfd858447f81210fbca7f52d16d43a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:06:33</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=bdfd858447f81210fbca7f52d16d43a7"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=b9fd858447f81210fbca7f52d16d43a6^sys_idNOT INb1fd858447f81210fbca7f52d16d43a9,b9fd858447f81210fbca7f52d16d43d0"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Hospital Flow">b9fd858447f81210fbca7f52d16d43a6</model>
+        <model_id>b9fd858447f81210fbca7f52d16d43a6</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_b9fd858447f81210fbca7f52d16d43a6</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:33</sys_created_on>
+        <sys_id>b1fd858447f81210fbca7f52d16d43a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="KGMU Hospital">0152940847301210fbca7f52d16d4304</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:06:33</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b1fd858447f81210fbca7f52d16d43a9"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Hospital Flow">b9fd858447f81210fbca7f52d16d43a6</model>
+        <model_id>b9fd858447f81210fbca7f52d16d43a6</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_b9fd858447f81210fbca7f52d16d43a6</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:34</sys_created_on>
+        <sys_id>b9fd858447f81210fbca7f52d16d43d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="KGMU Hospital">0152940847301210fbca7f52d16d4304</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:06:34</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b9fd858447f81210fbca7f52d16d43d0"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=b9fd858447f81210fbca7f52d16d43a6"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b9fd858447f81210fbca7f52d16d43a6"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=b9fd858447f81210fbca7f52d16d43a6^sys_idNOT IN06fdc58447f81210fbca7f52d16d4302,8afdc58447f81210fbca7f52d16d430a,8afdc58447f81210fbca7f52d16d4310"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Hospital Flow">b9fd858447f81210fbca7f52d16d43a6</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:34</sys_created_on>
+        <sys_id>06fdc58447f81210fbca7f52d16d4302</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="KGMU Hospital">0152940847301210fbca7f52d16d4304</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:06:34</sys_updated_on>
+        <ui_id>9b7f2a67-9f14-4f33-b802-1c065b93b7e3</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=06fdc58447f81210fbca7f52d16d4302"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>06fdc58447f81210fbca7f52d16d4302</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:34</sys_created_on>
+        <sys_id>4afdc58447f81210fbca7f52d16d4304</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:06:34</sys_updated_on>
+        <value>x_707573_kgmu_hosp_patient_record</value>
+        <variable display_value="Table">bcf2e9920b10030085c083eb37673acc</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>06fdc58447f81210fbca7f52d16d4302</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:34</sys_created_on>
+        <sys_id>86fdc58447f81210fbca7f52d16d4304</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:06:34</sys_updated_on>
+        <value/>
+        <variable display_value="Due Date">c5f2e9920b10030085c083eb37673af9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=06fdc58447f81210fbca7f52d16d4302"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_conditions</field>
+        <id>06fdc58447f81210fbca7f52d16d4302</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:34</sys_created_on>
+        <sys_id>42fdc58447f81210fbca7f52d16d4304</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:06:34</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>ApprovesAnyU[{{static.62826bf03710200044e0bfc8bcbe5df1}}]</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>due_date</field>
+        <id>06fdc58447f81210fbca7f52d16d4302</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:34</sys_created_on>
+        <sys_id>8efdc58447f81210fbca7f52d16d4303</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:06:34</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{"action":"none","date_type":"actual","date":"{{}}","duration":1,"duration_type":"days","schedule":"","schedule_label":""}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>06fdc58447f81210fbca7f52d16d4302</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:34</sys_created_on>
+        <sys_id>cafdc58447f81210fbca7f52d16d4303</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:06:34</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>06fdc58447f81210fbca7f52d16d4302</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:34</sys_created_on>
+        <sys_id>06fdc58447f81210fbca7f52d16d4304</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:06:34</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=06fdc58447f81210fbca7f52d16d4302"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=06fdc58447f81210fbca7f52d16d4302"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Hospital Flow">b9fd858447f81210fbca7f52d16d43a6</flow>
+        <order>3</order>
+        <parent_ui_id>7cc2b8d0-d0ae-4ec2-b3f3-dd4815dfd0d4</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:34</sys_created_on>
+        <sys_id>8afdc58447f81210fbca7f52d16d430a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="KGMU Hospital">0152940847301210fbca7f52d16d4304</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:06:34</sys_updated_on>
+        <ui_id>c5057dc4-5be4-481d-b100-e0ed7a0abca3</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=8afdc58447f81210fbca7f52d16d430a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>8afdc58447f81210fbca7f52d16d430a</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:34</sys_created_on>
+        <sys_id>86fdc58447f81210fbca7f52d16d430c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:06:34</sys_updated_on>
+        <value>x_707573_kgmu_hosp_patient_record</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>8afdc58447f81210fbca7f52d16d430a</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:34</sys_created_on>
+        <sys_id>c2fdc58447f81210fbca7f52d16d430c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:06:34</sys_updated_on>
+        <value>state=2</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=8afdc58447f81210fbca7f52d16d430a"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>8afdc58447f81210fbca7f52d16d430a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:34</sys_created_on>
+        <sys_id>42fdc58447f81210fbca7f52d16d430c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:06:34</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>8afdc58447f81210fbca7f52d16d430a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:34</sys_created_on>
+        <sys_id>cafdc58447f81210fbca7f52d16d430b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:06:34</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>8afdc58447f81210fbca7f52d16d430a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:34</sys_created_on>
+        <sys_id>8efdc58447f81210fbca7f52d16d430b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:06:34</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=8afdc58447f81210fbca7f52d16d430a"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=8afdc58447f81210fbca7f52d16d430a"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Hospital Flow">b9fd858447f81210fbca7f52d16d43a6</flow>
+        <order>5</order>
+        <parent_ui_id>326cd01e-c0b0-49ed-b790-b53e569597d5</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:34</sys_created_on>
+        <sys_id>8afdc58447f81210fbca7f52d16d4310</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="KGMU Hospital">0152940847301210fbca7f52d16d4304</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:06:34</sys_updated_on>
+        <ui_id>e142e4cd-5534-4f1a-8a28-6a77c871a4f0</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=8afdc58447f81210fbca7f52d16d4310"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>8afdc58447f81210fbca7f52d16d4310</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:34</sys_created_on>
+        <sys_id>86fdc58447f81210fbca7f52d16d4312</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:06:34</sys_updated_on>
+        <value>x_707573_kgmu_hosp_patient_record</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>8afdc58447f81210fbca7f52d16d4310</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:34</sys_created_on>
+        <sys_id>c2fdc58447f81210fbca7f52d16d4312</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:06:34</sys_updated_on>
+        <value>state=3</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=8afdc58447f81210fbca7f52d16d4310"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>8afdc58447f81210fbca7f52d16d4310</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:34</sys_created_on>
+        <sys_id>42fdc58447f81210fbca7f52d16d4312</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:06:34</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>8afdc58447f81210fbca7f52d16d4310</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:34</sys_created_on>
+        <sys_id>cafdc58447f81210fbca7f52d16d4311</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:06:34</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>8afdc58447f81210fbca7f52d16d4310</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:34</sys_created_on>
+        <sys_id>8efdc58447f81210fbca7f52d16d4311</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:06:34</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=8afdc58447f81210fbca7f52d16d4310"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=8afdc58447f81210fbca7f52d16d4310"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=b9fd858447f81210fbca7f52d16d43a6"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=b9fd858447f81210fbca7f52d16d43a6^sys_idNOT INc2fd858447f81210fbca7f52d16d43e8,cefd858447f81210fbca7f52d16d43eb"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">1fedc18447f81210fbca7f52d16d4375</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Hospital Flow">b9fd858447f81210fbca7f52d16d43a6</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:34</sys_created_on>
+        <sys_id>c2fd858447f81210fbca7f52d16d43e8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:06:34</sys_updated_on>
+        <ui_id>7cc2b8d0-d0ae-4ec2-b3f3-dd4815dfd0d4</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=c2fd858447f81210fbca7f52d16d43e8"/>
+    <sys_element_mapping action="delete_multiple" query="id=c2fd858447f81210fbca7f52d16d43e8"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>c2fd858447f81210fbca7f52d16d43e8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:34</sys_created_on>
+        <sys_id>06fd858447f81210fbca7f52d16d43eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:06:34</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{9b7f2a67-9f14-4f33-b802-1c065b93b7e3.approval_state}}=approved</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=c2fd858447f81210fbca7f52d16d43e8"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c2fd858447f81210fbca7f52d16d43e8"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">ebedc18447f81210fbca7f52d16d438d</block>
+        <comment/>
+        <connected_to>7cc2b8d0-d0ae-4ec2-b3f3-dd4815dfd0d4</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Hospital Flow">b9fd858447f81210fbca7f52d16d43a6</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:34</sys_created_on>
+        <sys_id>cefd858447f81210fbca7f52d16d43eb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:06:34</sys_updated_on>
+        <ui_id>326cd01e-c0b0-49ed-b790-b53e569597d5</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=cefd858447f81210fbca7f52d16d43eb"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=cefd858447f81210fbca7f52d16d43eb"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=cefd858447f81210fbca7f52d16d43eb"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=b9fd858447f81210fbca7f52d16d43a6"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=b9fd858447f81210fbca7f52d16d43a6"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_b9fd858447f81210fbca7f52d16d43a6^sys_idNOT IN71fd858447f81210fbca7f52d16d43cd,75fd858447f81210fbca7f52d16d43e1"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b9fd858447f81210fbca7f52d16d43a6</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:34</sys_created_on>
+        <sys_id>71fd858447f81210fbca7f52d16d43cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="KGMU Hospital" source="x_707573_kgmu_hosp">0152940847301210fbca7f52d16d4304</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="KGMU Hospital">0152940847301210fbca7f52d16d4304</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:06:34</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b9fd858447f81210fbca7f52d16d43a6</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:34</sys_created_on>
+        <sys_id>75fd858447f81210fbca7f52d16d43e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="KGMU Hospital" source="x_707573_kgmu_hosp">0152940847301210fbca7f52d16d4304</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="KGMU Hospital">0152940847301210fbca7f52d16d4304</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:06:34</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_b9fd858447f81210fbca7f52d16d43a6"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_b9fd858447f81210fbca7f52d16d43a6"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_b9fd858447f81210fbca7f52d16d43a6"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>5a0cc90847781210fbca7f52d16d4378</sys_id>
+        <latest_snapshot>b9fd858447f81210fbca7f52d16d43a6</latest_snapshot>
+        <compiler_build>glide-vancouver-07-06-2023__patch9-05-02-2024_05-14-2024_2249.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=5a0cc90847781210fbca7f52d16d4378^sys_idNOT IN5afdc58447f81210fbca7f52d16d433e"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"5afdc58447f81210fbca7f52d16d433e","name":"plan","plan_signature":null}}</plan>
+        <plan_id>5a0cc90847781210fbca7f52d16d4378</plan_id>
+        <snapshot>3e7e89c447f81210fbca7f52d16d43b5</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-17 13:06:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5afdc58447f81210fbca7f52d16d433e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:06:36</sys_updated_on>
+        <trigger display_value="">96fdc58447f81210fbca7f52d16d433c</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=5a0cc90847781210fbca7f52d16d4378"/>
+</record_update>

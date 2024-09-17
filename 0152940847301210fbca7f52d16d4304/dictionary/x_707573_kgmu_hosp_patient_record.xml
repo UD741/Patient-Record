@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="687390c047f01210fbca7f52d16d4322" label="Patient Record" max_length="40" name="x_707573_kgmu_hosp_patient_record" type="collection">
+        <element attributes="encode_utf8=false" label="Closed By" max_length="32" name="closed_by" reference="sys_user" type="reference"/>
+        <element attributes="encode_utf8=false" label="Completed By" max_length="32" name="completed_by" read_only="true" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Date of Join" max_length="40" name="date_of_join" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Name" mandatory="true" max_length="100" name="name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:getNextObjNumberPadded();" dynamic_default_value="fdcb83a85f220100a9ad2572f2b4773c" label="Number" max_length="40" name="number" read_only="true" type="string" use_dynamic_default="true"/>
+        <element attributes="edge_encryption_enabled=true" label="Patient Details" max_length="1000" name="patient_details" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="1" label="State" max_length="40" name="state" read_only="true" type="string">
+            <choice>
+                <element inactive_on_update="false" label="New" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="In Progress" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Complete" sequence="2" value="3"/>
+            </choice>
+        </element>
+        <element attributes="encode_utf8=false" label="Created By" max_length="32" name="u_created_by" read_only="true" reference="sys_user" type="reference"/>
+        <element attributes="encode_utf8=false" label="Update By" max_length="32" name="u_update_by" read_only="true" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="closed_by"/>
+        </index>
+        <index name="index2">
+            <element name="completed_by"/>
+        </index>
+        <index name="index3">
+            <element name="u_created_by"/>
+        </index>
+        <index name="index4">
+            <element name="u_update_by"/>
+        </index>
+    </element>
+</database>
