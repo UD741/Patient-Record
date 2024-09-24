@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_pipeline_pipeline">
+    <sn_pipeline_pipeline action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <name>deccc</name>
+        <pipeline_type display_value="Application Deployment">268f9c0fb73430100290b9708e11a9de</pipeline_type>
+        <source_environment display_value="Dev">eb6ad45a47b41210fbca7f52d16d4319</source_environment>
+        <sys_class_name>sn_pipeline_pipeline</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-24 10:17:05</sys_created_on>
+        <sys_id>543a5c1a47b41210fbca7f52d16d4349</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>deccc</sys_name>
+        <sys_package display_value="KGMU Hospital" source="x_707573_kgmu_hosp">0152940847301210fbca7f52d16d4304</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="KGMU Hospital">0152940847301210fbca7f52d16d4304</sys_scope>
+        <sys_update_name>sn_pipeline_pipeline_543a5c1a47b41210fbca7f52d16d4349</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-24 10:17:11</sys_updated_on>
+    </sn_pipeline_pipeline>
+</record_update>

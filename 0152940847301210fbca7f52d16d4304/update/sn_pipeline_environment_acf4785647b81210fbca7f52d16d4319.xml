@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_pipeline_environment">
+    <sn_pipeline_environment action="INSERT_OR_UPDATE">
+        <instance_credential display_value="sn_cicd_spoke.CICD">752a91887740001038e286a2681061fb</instance_credential>
+        <instance_id>1e799d6edb72315402d9172913961938</instance_id>
+        <instance_type>test</instance_type>
+        <instance_url>https://dev231576.service-now.com/</instance_url>
+        <is_controller>false</is_controller>
+        <name>test</name>
+        <sys_class_name>sn_pipeline_environment</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-24 11:04:02</sys_created_on>
+        <sys_id>acf4785647b81210fbca7f52d16d4319</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>test</sys_name>
+        <sys_package display_value="KGMU Hospital" source="x_707573_kgmu_hosp">0152940847301210fbca7f52d16d4304</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="KGMU Hospital">0152940847301210fbca7f52d16d4304</sys_scope>
+        <sys_update_name>sn_pipeline_environment_acf4785647b81210fbca7f52d16d4319</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-24 11:04:02</sys_updated_on>
+    </sn_pipeline_environment>
+</record_update>
